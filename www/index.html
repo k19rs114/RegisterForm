@@ -7,8 +7,26 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="keys.js"></script>
     <script>
+       $(document).ready(function(){
+        $(".button").click(function() {
+
+        $(".modal-box").addClass("open");
+        // $(".modal-box").css("display", "block");
+        });
+        $(".modal-box img.close-icon").click(function() {
+        // $(".modal-box").css("display", "none");
+        $(".modal-box").removeClass("open");
+
+    });
+    $(".login").click(function(){
+      login();
+    })
+
+      });
     </script>
+      
 </head>
 <body>
 	<div id="wrapper">
