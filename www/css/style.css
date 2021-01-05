@@ -1,2 +1,115 @@
 /**/
+    * {
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    background-image: linear-gradient(45deg, #F9493B 30%, #E72B68 60%, #962C25 100%);
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button {
+    width: 300px;
+    height: 40px;
+    background-color: #F9D644;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    color: #2B3352;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+}
+.modal-box {
+    width: 350px;
+    height: 170px;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0.4;
+    position: relative;
+    background-color: #2B3352;
+    border-radius: 10px;
+    transform: scale(0.4);
+}
+
+.modal-box.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+.modal-box.success{
+  background-color: greenyellow;
+  width: 350px;
+  height: 50px;
+  z-index: 2;
+}
+
+.modal-box h3 {
+    font-size: 25px;
+    color: yellow;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal-box table {
+    margin-left: 15px;
+}
+
+.modal-box table label {
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.modal-box table input[type=email],
+input[type=password] {
+    width: 170px;
+    font-size: 17px;
+    padding: 5px 10px;
+    outline: none;
+    border: green 1px solid;
+    margin-bottom: 5px;
+}
+
+.modal-box .close-icon {
+    position: absolute;
+    width: 20px;
+    background-color: wheat;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+button.login{
+  width: 70px;
+  height: 30px;
+  position: relative;
+  top: 5%;
+  left: 40%;
+}
+.done{
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  display: none;
+  position: absolute;
+ top: 30%;
+ right: 41%;
+}
